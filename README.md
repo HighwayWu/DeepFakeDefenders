@@ -60,7 +60,7 @@ The training code (e.g., unsupervised clustering and joint optimization loss) an
 THIS WORK WAS PERFORMED IN PART AT SICC WHICH IS SUPPORTED BY SKL-IOTSC, UNIVERSITY OF MACAU.
 
 <p align='left'>  
-  <img src='https://github.com/HighwayWu/DeepFakeDefenders/blob/main/imgs/organization.png' width='850'/>
+  <img src='https://github.com/HighwayWu/DeepFakeDefenders/blob/main/imgs/organization.png' width='450'/>
 </p>
 
 INCLUSION·CONFERENCE ON THE BUND, THE ORGANIZER OF THE COMPETITION.
