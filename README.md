@@ -60,6 +60,7 @@ INCLUSION·CONFERENCE ON THE BUND, THE ORGANIZER OF THE COMPETITION.
 ## Lisense
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial 4.0 International License][cc-by-nc].
+
 [![CC BY-NC 4.0][cc-by-nc-image]][cc-by-nc]
 
 [cc-by-nc]: https://creativecommons.org/licenses/by-nc/4.0/
