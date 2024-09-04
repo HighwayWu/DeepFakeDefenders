@@ -2,6 +2,10 @@
 
 1st place solution for [The Global Multimedia Deepfake Detection (Image Track)](https://www.kaggle.com/competitions/multi-ffdi/overview) by "JTGroup" team.
 
+<p align='center'>  
+  <img src='https://github.com/HighwayWu/DeepFakeDefenders/blob/main/imgs/competition.jpg' width='850'/>
+</p>
+
 ## Table of Contents
 
 - [Motivation](#motivation)
