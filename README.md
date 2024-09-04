@@ -1,10 +1,10 @@
 # DeepFakeDefenders
 
-1st place solution for [The Global Multimedia Deepfake Detection (Image Track)](https://www.kaggle.com/competitions/multi-ffdi/overview) by "JTGroup" team.
-
 <p align='center'>  
   <img src='https://github.com/HighwayWu/DeepFakeDefenders/blob/main/imgs/competition.png' width='850'/>
 </p>
+
+1st place solution for [The Global Multimedia Deepfake Detection (Image Track)](https://www.kaggle.com/competitions/multi-ffdi/overview) by "JTGroup" team.
 
 ## Table of Contents
 
@@ -41,7 +41,6 @@ The framework of our proposed method consists of two primary stages: Data Prepar
 
 ## Inference
 
-- For testing:
 ```bash
 >> python infer.py
 ```
