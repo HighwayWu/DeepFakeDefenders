@@ -21,7 +21,7 @@ The visualization of features in the official split of training and validation s
 
 
 ## Framework
-The framework of our proposed method consists of two primary stages: Data Preparing and Training. In the Data Preparing stage, we focus on augmenting the existing dataset by generating new data through image editing and Stable Diffusion (SD) techniques. We then perform clustering to reassemble the dataset, aiming to enhance both the detection performance and the robustness of our method. In the Training stage, we introduce a series of expert models and optimize them using three types of losses: $L_{\mathsf{KL}}$, $L_{\mathsf{NCE}}$, and $L_{\mathsf{CE}}$. This multi-loss approach ensures that the model can effectively differentiate between authentic and manipulated images. Please refer to the tech report for more details.
+The framework of our proposed method consists of two primary stages: Data Preparing and Training. In the Data Preparing stage, we focus on augmenting the existing dataset by generating new data through image editing and Stable Diffusion (SD) techniques. We then perform clustering to reassemble the dataset, aiming to enhance both the detection performance and the robustness of our method. In the Training stage, we introduce a series of expert models and optimize them using three types of losses: $L_{\mathsf{KL}}$, $L_{\mathsf{NCE}}$, and $L_{\mathsf{CE}}$. This multi-loss approach ensures that the model can effectively differentiate between authentic and manipulated images. Please refer to the tech report (will be on arXiv later) for more details.
 
 <p align='center'>  
   <img src='https://github.com/HighwayWu/DeepFakeDefenders/blob/main/imgs/framework.jpg' width='850'/>
