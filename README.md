@@ -54,3 +54,5 @@ The training code (e.g., unsupervised clustering and joint optimization loss) an
 
 ## Acknowledgement
 THIS WORK WAS PERFORMED IN PART AT SICC WHICH IS SUPPORTED BY SKL-IOTSC, UNIVERSITY OF MACAU.
+
+INCLUSION·CONFERENCE ON THE BUND, THE ORGANIZER OF THE COMPETITION.
