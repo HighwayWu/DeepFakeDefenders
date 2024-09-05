@@ -50,7 +50,7 @@ Enter the image path and expect the following result:
 >> Prediction of [demo/img_1_should_be_0.0016829653177410.jpg] being Deepfake: 0.001683078
 ```
 
-**Note: The pretrained weights can be downloaded from [Baidu Pan](https://pan.baidu.com/s/1FBhqN5Bb0YQExpXkInPysA?pwd=lhuo ).**
+**Note: The pretrained weights can be downloaded from [Baidu Pan](https://pan.baidu.com/s/1hh6Rub60T7UXok5rqACffQ?pwd=gxu5).**
 
 ## Training
 The training code (e.g., unsupervised clustering and joint optimization loss) and detailed technical report will be available shortly.
