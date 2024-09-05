@@ -64,7 +64,7 @@ The training code (e.g., unsupervised clustering and joint optimization loss) an
 
 - INCLUSION·CONFERENCE ON THE BUND, THE ORGANIZER OF THE COMPETITION.
 
-## Lisense
+## License
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial 4.0 International License][cc-by-nc].
 
