@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepFakeDefenders</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">DeepFakeDefenders 真假预测</h1>
+        <div class="text-center mt-4">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <input type="file" class="form-control" name="image" required>
+                </div>
+                
+                <!-- 背景颜色选择 -->
+                <div class="mb-3">
+                    <label for="background-color" class="form-label">选择证书背景颜色：</label>
+                    <select class="form-select" id="background-color" name="background_color">
+                        <option value="white">白色</option>
+                        <option value="blue">水蓝色</option>
+                        <option value="green">渐变荧光绿</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">上传图片并检测</button>
+            </form>
+        </div>
+
+        <!-- 证书展示区域 -->
+        <div id="certificate-container">
+            <h3>检测证书</h3>
+            <img id="certificate-img" src="" alt="证书图片">
+            <div class="text-center mt-3">
+                <a id="download-certificate" href="#" class="btn btn-primary">下载证书</a>
+            </div>
+        </div>
+
+
+        <div id="result" class="text-center mt-4">
+            <!-- 结果展示区 -->
+        </div>
+    </div>
+
+    <footer>
+        <p>项目源码地址：<a href="https://github.com/HighwayWu/DeepFakeDefenders">DeepFakeDefenders</a></p>
+        <p>简介：DeepFakeDefenders旨在帮助用户检测图片的真实性。</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#uploadForm').on('submit', function (event) {
+                event.preventDefault();
+
+                var formData = new FormData(this);
+
+                $.ajax({
+                    url: '/upload',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (data) {
+                        if (data.certificate) {
+                            // 显示生成的证书
+                            $('#certificate-container').show();
+                            $('#certificate-img').attr('src', 'data:image/png;base64,' + data.certificate);
+
+                            // 配置下载按钮
+                            $('#download-certificate').attr('href', 'data:image/png;base64,' + data.certificate);
+                            $('#download-certificate').attr('download', 'certificate.png');
+                        } else {
+                            alert("检测失败，请重试。");
+                        }
+                    },
+                    error: function (error) {
+                        alert("图片上传失败，请重试！");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
